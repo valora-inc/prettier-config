@@ -1,0 +1,10 @@
+{
+  "name": "@valora/prettier-config",
+  "version": "0.0.1",
+  "main": "index.json",
+  "author": "Valora Inc",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
