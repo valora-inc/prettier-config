@@ -1,10 +1,31 @@
 {
   "name": "@valora/prettier-config",
-  "version": "0.0.1",
+  "version": "0.0.0-semantic-release",
   "main": "index.json",
   "author": "Valora Inc",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "format": "prettier --log-level error --write .",
+    "format:check": "prettier --check .",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.1.1"
+  },
+  "prettier": "./index.json",
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "preset": "conventionalcommits"
+  },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "access": "public",
+    "provenance": true
   }
 }

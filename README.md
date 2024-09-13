@@ -15,6 +15,6 @@ yarn add --dev @valora/prettier-config
 ```jsonc
 {
   // ...
-  "prettier": "@valora/prettier-config"
+  "prettier": "@valora/prettier-config",
 }
 ```
